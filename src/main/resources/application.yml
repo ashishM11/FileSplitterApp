@@ -1,0 +1,29 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA234OIIWZTAIVPXFP
+      secret-key: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: manosoft-work
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 9000
+
+logging:
+  level:
+    org.springframework.web: DEBUG
